@@ -1,0 +1,52 @@
+Dataset Used:
+ SMS Spam Collection Dataset (5,574 messages labeled as 'spam' or 'ham')
+
+Preprocessing:
+ Text cleaned and transformed using TF-IDF vectorization
+ Stop words removed and text converted to lowercase
+ Labels: spam = 0, ham = 1
+
+Machine Learning Models Evaluated:
+1. Logistic Regression
+   - Training Accuracy: 98–99%
+   - Test Accuracy:     96–97%
+   - Generalizes very well and is simple to implement.
+
+2. Naive Bayes
+   - Training Accuracy: 96–97%
+   - Test Accuracy:     95–96%
+   - Lightweight, very suitable for text classification.
+
+3. Decision Tree
+   - Training Accuracy: 100%
+   - Test Accuracy:     91–93%
+   - Overfits easily on text data.
+
+4. Random Forest
+   - Training Accuracy: 99–100%
+   - Test Accuracy:     95–96%
+   - More robust than Decision Tree.
+
+5. Support Vector Machine (SVM - Linear Kernel)
+   - Training Accuracy: 99%
+   - Test Accuracy:     96–97%
+   - Excellent for high-dimensional sparse text data.
+
+6. Linear Regression (converted to binary)
+   - Training Accuracy: 90–95%
+   - Test Accuracy:     83–87%
+   - Not suitable for classification tasks.
+
+Conclusion:
+ Best Performing Models:
+- Support Vector Machine (Linear Kernel)
+- Logistic Regression
+
+Both models achieved around 96–97% accuracy on unseen data, with minimal overfitting.
+They are most effective for text-based spam detection using TF-IDF features.
+
+Visualization:
+- Model accuracy results plotted using scatter charts for better comparison.
+- Green dot: Training accuracy
+- Red dot: Test accuracy
+
